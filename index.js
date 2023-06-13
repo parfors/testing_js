@@ -140,3 +140,24 @@
 // for (var val in obj) {
 //   console.log(obj[val]);
 // }
+
+// const a = {
+//   a: 5,
+//   b: 4,
+//   c: {
+//     soon: "sting",
+//   },
+//   d: {
+//     foo() {
+//       console.log("first");
+//     },
+//   },
+// };
+
+// const b = { ...a };
+
+// console.log(a === b);
+
+// b.d.foo();
+
+// console.log(b.d.foo);
