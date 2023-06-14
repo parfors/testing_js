@@ -68,3 +68,51 @@
 // };
 
 // b.getContext();
+
+// console.log(window);
+
+// window.name = "some name";
+
+// console.log(window, window.name);
+
+// console.log(foo());
+// console.log(foo1());
+
+// function foo() {
+//   return 1;
+// }
+
+// const foo1 = () => {
+//   return 5;
+// };
+
+// console.log(a);
+// a = 5;
+// console.log(a);
+// var a = 4;
+// console.log(a);
+// let a = 1;
+
+// function foo() {
+//   a = 2;
+//   console.log(a);
+//   function test() {
+//     a = 5;
+//     console.log(a);
+//   }
+//   test();
+// }
+// console.log(a);
+// foo();
+// console.log(a);
+
+// var a = 1;
+// function foo(b) {
+//   console.log(b);
+//   b = 10;
+//   return b;
+// }
+
+// var b = foo(a);
+
+// console.log(a, b);
