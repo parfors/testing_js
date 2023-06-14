@@ -116,3 +116,11 @@
 // var b = foo(a);
 
 // console.log(a, b);
+
+// let obj = {
+//   1: 0,
+//   0: 1,
+//   4: 79,
+// };
+
+// console.log(obj[1]);
