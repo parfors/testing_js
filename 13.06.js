@@ -124,3 +124,27 @@
 // };
 
 // console.log(obj[1]);
+
+// let a = 30;
+
+// const stateControl = (function foo() {
+//   const state = {
+//     name: null,
+//     age: null,
+//   };
+
+//   function setName(name) {
+//     state.name = name;
+//   }
+//   function getState() {
+//     return console.log(state);
+//   }
+
+//   function setAge(age) {
+//     state.age = age;
+//   }
+//   return { setAge, setName, getState };
+// })();
+
+// stateControl.setName("Oleg");
+// stateControl.getState();
