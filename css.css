@@ -1,22 +1,8 @@
 a {
     background-color: aqua;
-    text-decoration:none;
-    padding: -5px;
-    text-shadow: 5px 5px red;}
+}
 
 #fd {
     background-color: blue;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    font-size: 35px;
-    text-transform: uppercase;
-}
-
-ul li {
-    background-color: aquamarine;
-}
