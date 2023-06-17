@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 18px">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css.css" />
     <title>Document</title>
   </head>
   <body>
-    <div id="fd" style="background-color: red">Hello</div>
+    <div id="fd">Hello</div>
+    <a href="mailto:suprun.atom@gmail.com">send</a>
+    <form action="/action_page.php" onsubmit="myFunction()">
+      Enter name: <input type="text" name="fname" />
+      <input type="submit" value="Submit" />
+    </form>
+    <ul>
+      <li style="font-size: 1rem">Hello</li>
+      <li>Hello</li>
+      <li>Hello</li>
+      <li>Hello</li>
+    </ul>
+
+    <script>
+      function myFunction() {
+        alert("The form was submitted");
+      }
+    </script>
     <style>
       #fd {
         color: blueviolet;
