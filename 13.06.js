@@ -148,3 +148,75 @@
 
 // stateControl.setName("Oleg");
 // stateControl.getState();
+// let a = 5;
+// const foo = (val) => "console.log(val)";
+// console.log(foo);
+// foo();
+
+// let a = 5;
+
+// function foo() {
+//   a = 6;
+//   return function () {
+//     console.log(a);
+//   };
+// }
+
+// a = 2;
+// let fe = foo();
+// fe();
+
+// const a = {
+//   name: "Bob",
+//   age: 334,
+// };
+
+// console.log(a?.user?.ham);
+
+// for (let key in a) {
+//   console.log(typeof key);
+//   console.log(a[key]);
+// }
+
+// const a = {
+//   show: () => console.log(this),
+// };
+
+// console.log(a.show);
+// a.show();
+
+// let a = {};
+// console.log(a);
+
+// class Some {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+
+// const a = new Some("Bill", 23);
+
+// console.log(a.age, a.constructor, a);
+
+// Promise.reject("Er")
+//   .finally(() => console.log("first"))
+//   .then(() => console.log("second"))
+//   .catch((err) => console.log(err));
+
+// const promise = new Promise((res, reg) => res(20));
+
+// promise.then((res) => {
+//   console.log(res);
+//   return res * 2;
+// });
+
+// console.log(1);
+
+// setTimeout(() => {
+//   console.log(2);
+// }, 0);
+
+// Promise.resolve().then(() => console.log("first"));
+
+// console.log(4);
