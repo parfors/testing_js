@@ -220,3 +220,51 @@
 // Promise.resolve().then(() => console.log("first"));
 
 // console.log(4);
+
+// function createClicker() {
+//   let clicks = 0;
+//   return {
+//     click() {
+//       clicks++;
+//     },
+//     get() {
+//       return clicks;
+//     },
+//   };
+// }
+
+// const clicker = createClicker();
+
+// clicker.click();
+// clicker.click();
+
+// console.log(clicker.get());
+// console.log(clicker);
+
+// let a = {
+//   a: 234,
+// };
+
+// let b = {
+//   some: "String",
+// };
+
+// let c = a;
+
+// console.log(c);
+
+// c = {
+//   ter: "first",
+// };
+//   function setName(name) {
+//     state.name = name;
+//   }
+//   function getState() {
+//     return console.log(state);
+//   }
+
+//   function setAge(age) {
+//     state.age = age;
+//   }
+//   return { setAge, setName, getState };
+// })();
