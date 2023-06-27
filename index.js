@@ -161,3 +161,39 @@
 // b.d.foo();
 
 // console.log(b.d.foo);
+
+// promise2.then((data) => console.log(data));
+
+// console.log(String(3) + String(3));
+
+// for (var i = 0; i < 10; i++) {
+//   console.log(i);
+//   ((i) =>
+//     setTimeout(() => {
+//       console.log("async", i);
+//     }, 0))(i);
+// }
+
+// const a = [1, 2, 5, 6, 7];
+
+// const b = [...a.reverse()];
+
+// console.log(b);
+
+// const c = "To be or not to Be".replace(/be/, "eat");
+
+// console.log(c);
+
+// const a = "some";
+// const b = `three`;
+
+// const contains = (string, symbol) => string.includes(symbol);
+// console.log(contains(a, '"'), contains(b, "`"));
+
+// const obj = { a: 2 };
+
+// function is(o) {
+//   return Object.keys(o).length === 0;
+// }
+
+// console.log(is(obj));
