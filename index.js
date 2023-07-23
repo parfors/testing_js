@@ -197,3 +197,58 @@
 // }
 
 // console.log(is(obj));
+
+// const a = [1, 2, 5, 6, 7];
+
+// const b = [...a.reverse()];
+
+// console.log(b);
+
+// const c = "To be or not to Be".replace(/be/, "eat");
+
+// console.log(c);
+
+// const d = {
+//   get x() {
+//     return 5;
+//   },
+// };
+
+// d.number = 7;
+
+// console.log(++d.number);
+
+// const arr = [1, 3, 5, 7, 8];
+
+// const b = JSON.stringify(arr);
+
+// console.log(b);
+
+// const foo = (a) => {
+//   return a.toArray().splice(4);
+// };
+
+// console.log(foo("javaScript"));
+
+// const a = "some";
+// const b = `three`;
+
+// const contains = (string, symbol) => string.includes(symbol);
+// console.log(contains(a, '"'), contains(b, "`"));
+
+// const obj = { a: 2 };
+
+// function is(o) {
+//   return Object.keys(o).length === 0;
+// }
+
+// console.log(is(obj));
+
+// function first() {
+//   let string = "string";
+
+//   function second() {
+//     return "return string";
+//   }
+//   return second();
+// }
