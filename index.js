@@ -253,45 +253,48 @@
 //   return second();
 // }
 
-const string = "w27y7";
-const subString1 = "27";
-const subString2 = "w7y";
+// ------------------------------------------------------My CODE---------------------------------------------------------------
+// const string = "w27y7";
+// const subString1 = "27";
+// const subString2 = "w7y";
 
-const stringChecker = function (s, p1, p2) {
-  const checkLength = s.length === p1.length + p2.length;
+// const stringChecker = function (s, p1, p2) {
+//   const checkLength = s.length === p1.length + p2.length;
 
-  if (!checkLength) {
-    return false;
-  }
+//   if (!checkLength) {
+//     return false;
+//   }
 
-  let firstSubString = p1;
-  let secondSubString = p2;
-  let checkInclude = true;
+//   let firstSubString = p1;
+//   let secondSubString = p2;
+//   let checkInclude = true;
 
-  for (let i = 0; i < s.length; i++) {
-    if (!checkInclude) {
-      return false;
-    }
-    let isOneCharEqualInP1 = s[i] === firstSubString[0];
-    let isOneCharEqualInP2 = s[i] === secondSubString[0];
+//   for (let i = 0; i < s.length; i++) {
+//     if (!checkInclude) {
+//       return false;
+//     }
+//     let isOneCharEqualInP1 = s[i] === firstSubString[0];
+//     let isOneCharEqualInP2 = s[i] === secondSubString[0];
 
-    if (isOneCharEqualInP1) {
-      firstSubString = firstSubString.slice(1);
-    }
+//     if (isOneCharEqualInP1) {
+//       firstSubString = firstSubString.slice(1);
+//     }
 
-    if (!isOneCharEqualInP1 && isOneCharEqualInP2) {
-      secondSubString = secondSubString.slice(1);
-    }
+//     if (!isOneCharEqualInP1 && isOneCharEqualInP2) {
+//       secondSubString = secondSubString.slice(1);
+//     }
 
-    if (!isOneCharEqualInP1 && !isOneCharEqualInP2) {
-      checkInclude = false;
-    }
-  }
+//     if (!isOneCharEqualInP1 && !isOneCharEqualInP2) {
+//       checkInclude = false;
+//     }
+//   }
 
-  return checkInclude;
-};
+//   return checkInclude;
+// };
 
 // console.log(stringChecker(string, subString1, subString2));
+
+// ------------------------------------------------GPT CODE-----------------------------------------------------------
 
 // function canInterleaveStrings(s, p1, p2, sIndex = 0, p1Index = 0, p2Index = 0) {
 //   if (sIndex === s.length) {
@@ -315,33 +318,33 @@ const stringChecker = function (s, p1, p2) {
 //   return false;
 // }
 
-// // Test case
-// const string = "w27y7";
-// const subString1 = "27";
-// const subString2 = "w7y";
-// console.log(canInterleaveStrings(string, subString1, subString2)); // Output: true
+// Test case
+const string = "w27y7";
+const subString1 = "27";
+const subString2 = "w7y";
+console.log(canComposeString(string, subString1, subString2)); // Output: true
 
-// function canComposeString(s, p1, p2, sIndex = 0, p1Index = 0, p2Index = 0) {
-//   if (sIndex === s.length) {
-//     return p1Index === p1.length && p2Index === p2.length;
-//   }
+function canComposeString(s, p1, p2, sIndex = 0, p1Index = 0, p2Index = 0) {
+  if (sIndex === s.length) {
+    return p1Index === p1.length && p2Index === p2.length;
+  }
 
-//   const currentChar = s[sIndex];
+  const currentChar = s[sIndex];
 
-//   if (p1Index < p1.length && currentChar === p1[p1Index]) {
-//     if (canComposeString(s, p1, p2, sIndex + 1, p1Index + 1, p2Index)) {
-//       return true;
-//     }
-//   }
+  if (p1Index < p1.length && currentChar === p1[p1Index]) {
+    if (canComposeString(s, p1, p2, sIndex + 1, p1Index + 1, p2Index)) {
+      return true;
+    }
+  }
 
-//   if (p2Index < p2.length && currentChar === p2[p2Index]) {
-//     if (canComposeString(s, p1, p2, sIndex + 1, p1Index, p2Index + 1)) {
-//       return true;
-//     }
-//   }
+  if (p2Index < p2.length && currentChar === p2[p2Index]) {
+    if (canComposeString(s, p1, p2, sIndex + 1, p1Index, p2Index + 1)) {
+      return true;
+    }
+  }
 
-//   return false;
-// }
+  return false;
+}
 
 // // Test cases
 // const string1 = "Do you have a cup of tea? Yes, I do!";
@@ -406,11 +409,21 @@ const stringChecker = function (s, p1, p2) {
 
 // Test failed with: Random Test -  S = "x0ySFFzib6y7H4EvBp y", P1 = "x0ySFFzib6", P2 = "y7H4EvBp y"
 
-// function isMerge(s, part1, part2) {
-//   return !s
-//     ? !(part1 || part2)
-//     : (s[0] == part1[0] && isMerge(s.slice(1), part1.slice(1), part2)) ||
-//         (s[0] == part2[0] && isMerge(s.slice(1), part1, part2.slice(1)));
-// }
+// --------------------------------------------------Chat CODE-----------------------------------------------------
+
+function isMerge(s, part1, part2) {
+  return !s
+    ? !(part1 || part2)
+    : (s[0] == part1[0] && isMerge(s.slice(1), part1.slice(1), part2)) ||
+        (s[0] == part2[0] && isMerge(s.slice(1), part1, part2.slice(1)));
+}
 
 // console.log(isMerge(string, subString1, subString2));
+
+var empl = "hello";
+
+function Empl() {
+  this.empl = "hi";
+}
+
+console.log(Empl.empl);
