@@ -319,32 +319,32 @@
 // }
 
 // Test case
-const string = "w27y7";
-const subString1 = "27";
-const subString2 = "w7y";
-console.log(canComposeString(string, subString1, subString2)); // Output: true
+// const string = "w27y7";
+// const subString1 = "27";
+// const subString2 = "w7y";
+// console.log(canComposeString(string, subString1, subString2)); // Output: true
 
-function canComposeString(s, p1, p2, sIndex = 0, p1Index = 0, p2Index = 0) {
-  if (sIndex === s.length) {
-    return p1Index === p1.length && p2Index === p2.length;
-  }
+// function canComposeString(s, p1, p2, sIndex = 0, p1Index = 0, p2Index = 0) {
+//   if (sIndex === s.length) {
+//     return p1Index === p1.length && p2Index === p2.length;
+//   }
 
-  const currentChar = s[sIndex];
+//   const currentChar = s[sIndex];
 
-  if (p1Index < p1.length && currentChar === p1[p1Index]) {
-    if (canComposeString(s, p1, p2, sIndex + 1, p1Index + 1, p2Index)) {
-      return true;
-    }
-  }
+//   if (p1Index < p1.length && currentChar === p1[p1Index]) {
+//     if (canComposeString(s, p1, p2, sIndex + 1, p1Index + 1, p2Index)) {
+//       return true;
+//     }
+//   }
 
-  if (p2Index < p2.length && currentChar === p2[p2Index]) {
-    if (canComposeString(s, p1, p2, sIndex + 1, p1Index, p2Index + 1)) {
-      return true;
-    }
-  }
+//   if (p2Index < p2.length && currentChar === p2[p2Index]) {
+//     if (canComposeString(s, p1, p2, sIndex + 1, p1Index, p2Index + 1)) {
+//       return true;
+//     }
+//   }
 
-  return false;
-}
+//   return false;
+// }
 
 // // Test cases
 // const string1 = "Do you have a cup of tea? Yes, I do!";
@@ -411,19 +411,37 @@ function canComposeString(s, p1, p2, sIndex = 0, p1Index = 0, p2Index = 0) {
 
 // --------------------------------------------------Chat CODE-----------------------------------------------------
 
-function isMerge(s, part1, part2) {
-  return !s
-    ? !(part1 || part2)
-    : (s[0] == part1[0] && isMerge(s.slice(1), part1.slice(1), part2)) ||
-        (s[0] == part2[0] && isMerge(s.slice(1), part1, part2.slice(1)));
+// function isMerge(s, part1, part2) {
+//   return !s
+//     ? !(part1 || part2)
+//     : (s[0] == part1[0] && isMerge(s.slice(1), part1.slice(1), part2)) ||
+//         (s[0] == part2[0] && isMerge(s.slice(1), part1, part2.slice(1)));
+// }
+
+// // console.log(isMerge(string, subString1, subString2));
+
+// var empl = "hello";
+
+// function Empl() {
+//   this.empl = "hi";
+// }
+
+// console.log(Empl.empl);
+
+function betterThanAverage(classPoints, yourPoints) {
+  classPoints.push(yourPoints);
+  const average =
+    classPoints.reduce((acc, value) => {
+      return acc + value;
+    }, 0) / classPoints.length;
+  console.log(average);
+  console.log(yourPoints);
+  console.log(typeof yourPoints);
+  if (yourPoints > average) {
+    console.log("first");
+    return true;
+  }
+  return false;
 }
 
-// console.log(isMerge(string, subString1, subString2));
-
-var empl = "hello";
-
-function Empl() {
-  this.empl = "hi";
-}
-
-console.log(Empl.empl);
+console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9));
