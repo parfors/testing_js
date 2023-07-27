@@ -428,20 +428,26 @@
 
 // console.log(Empl.empl);
 
-function betterThanAverage(classPoints, yourPoints) {
-  classPoints.push(yourPoints);
-  const average =
-    classPoints.reduce((acc, value) => {
-      return acc + value;
-    }, 0) / classPoints.length;
-  console.log(average);
-  console.log(yourPoints);
-  console.log(typeof yourPoints);
-  if (yourPoints > average) {
-    console.log("first");
-    return true;
-  }
-  return false;
-}
+// function betterThanAverage(classPoints, yourPoints) {
+//   classPoints.push(yourPoints);
+//   const average =
+//     classPoints.reduce((acc, value) => {
+//       return acc + value;
+//     }, 0) / classPoints.length;
+//   console.log(average);
+//   console.log(yourPoints);
+//   console.log(typeof yourPoints);
+//   if (yourPoints > average) {
+//     console.log("first");
+//     return true;
+//   }
+//   return false;
+// }
 
-console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9));
+// console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9));
+
+// function findNeedle(haystack) {
+//   const index = haystack.indexOf('needle')
+//   if (index !== -1 ) return `found the needle at position ${index}`;
+//     if (index === -1 ) return
+//   }
