@@ -451,3 +451,9 @@
 //   if (index !== -1 ) return `found the needle at position ${index}`;
 //     if (index === -1 ) return
 //   }
+
+// let a = 9;
+// let b = a++;
+// console.log(b);
+// console.log(a);
+// console.log(++a * b);
