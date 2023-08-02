@@ -457,3 +457,23 @@
 // console.log(b);
 // console.log(a);
 // console.log(++a * b);
+
+// const b = { ...a };
+
+// console.log(a === b);
+
+// b.d.foo();
+
+// console.log(b.d.foo);
+
+// promise2.then((data) => console.log(data));
+
+// console.log(String(3) + String(3));
+
+// for (var i = 0; i < 10; i++) {
+//   console.log(i);
+//   ((i) =>
+//     setTimeout(() => {
+//       console.log("async", i);
+//     }, 0))(i);
+// }
